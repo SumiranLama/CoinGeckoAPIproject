@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    height: 5*20rem;
+    max-width: 600px;
+    margin-left: 300px;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 5%;
+}
+
+body{
+    background-color: beige;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}

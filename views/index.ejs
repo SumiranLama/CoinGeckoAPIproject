@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Adding the tillium google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=PT+Sans&family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>List of Crypto from CoinGecko</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Adding the Gecko Logo -->
+        <img src="images/[latest] coingecko_logo_without_text.png"/> 
+        <h1>List of CryptoCurrency</h1>
+        <ul>
+            <!-- Listing the names of the CrytoCurrency from the /networks API -->
+            <% for (let i = 0; i < cont.length; i++) { %>
+                <li>
+                    <%= cont[i].attributes.name; %>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<%- include("footer.ejs") %>
